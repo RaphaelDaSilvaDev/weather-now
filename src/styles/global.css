@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    @apply h-screen w-screen flex justify-center items-center text-gray-600 bg-gradient-to-b from-initial-100 to-initial-200 bg-no-repeat transition duration-1000 overflow-hidden
+}
+
+body.night{
+    @apply text-gray-200
+}
+
+body.sunny{
+    @apply bg-gradient-to-b from-sunny-100 to-sunny-200 bg-no-repeat transition duration-1000
+}
+
+body.partly-cloud{
+    @apply bg-gradient-to-b from-cloudy-100 to-cloudy-200 bg-no-repeat transition duration-1000
+}
+
+body.rain,
+body.rain-possible{
+    @apply bg-gradient-to-b from-rain-100 to-rain-200 bg-no-repeat transition duration-1000
+}
+
+body.have-rain, 
+body.thunder-rain{
+    @apply bg-gradient-to-b from-havyRain-100 to-havyRain-200 bg-no-repeat transition duration-1000
+}
+
+body.night.sunny{
+    @apply bg-gradient-to-b from-nigthSunny-100 to-nigthSunny-200 bg-no-repeat transition duration-1000
+}
+
+body.night.partly-cloud{
+    @apply bg-gradient-to-b from-nigthCloudy-100 to-nigthCloudy-200 bg-no-repeat transition duration-1000
+}
+
+body.night.rain,
+body.night.rain-possible{
+    @apply bg-gradient-to-b from-nigthRain-100 to-nigthRain-200 bg-no-repeat transition duration-1000
+}
+
+body.night.have-rain,
+body.night.thunder-rain{
+    @apply bg-gradient-to-b from-nigthHavyRain-100 to-nigthHavyRain-200 bg-no-repeat transition duration-1000
+}
+
+

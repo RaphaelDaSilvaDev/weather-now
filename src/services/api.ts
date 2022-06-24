@@ -23,7 +23,7 @@ export interface IApiResponse {
 }
 
 export async function fetchData(city: string): Promise<IApiResponse> {
-    const url = `http://api.weatherapi.com/v1/current.json?key=${KEY}&lang=pt&q=${city}&aqi=yes`
+    const url = `https://api.weatherapi.com/v1/current.json?key=${KEY}&lang=pt&q=${city}&aqi=yes`
     const fetchResponse = await fetch(url)
     const data: IApiResponse = await fetchResponse.json()
     return data

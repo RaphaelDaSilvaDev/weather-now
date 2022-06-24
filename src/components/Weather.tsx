@@ -69,7 +69,7 @@ export function Weather({ data, formatedDate }: { data: IApiResponse | undefined
             {data?.location
                 ?
                 <>
-                    <div className="flex flex-col justify-center items-center py-4">
+                    <div className="flex flex-col justify-center items-center">
                         <span>{data.location.region}, {data.location.country}</span>
                         <span>{formatedDate}</span>
                     </div>
